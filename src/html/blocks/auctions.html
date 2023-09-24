@@ -1,0 +1,28 @@
+<section class="auctions">
+  <div class="container">
+    <div class="auctions__title">
+      <p class="oxanium-64">Live Auctions</p>
+    </div>
+    <div class="auctions__controls">
+      <button id="auctionsPrev">
+        <img src="./img/icons/btn-back.svg" alt="Prev" />
+      </button>
+      <button id="auctionsNext">
+        <img src="./img/icons/btn-next.svg" alt="Next" />
+      </button>
+    </div>
+    <div class="container-slider">
+      <div class="auctions__slider">
+        @@include('./elements/swiper-auctions.html')
+      </div>
+    </div>
+    <div class="container-slider-mobile">
+      <div class="auctions-mobile__items">
+        @@loop('./templates/auctions-slider.html', './data/auctions-slider-mobile.json')
+      </div>
+    </div>
+    <div class="btn-black work-sans-30">
+      <a href="#!">View All</a>
+    </div>
+  </div>
+</section>

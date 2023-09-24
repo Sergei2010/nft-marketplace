@@ -1,0 +1,29 @@
+[
+  {
+    "img": "auctions-1.png",
+    "time": "03:18:24",
+    "avatar": "avatar-1.svg",
+    "title": "Virtual Art",
+    "email": "by @wzard",
+    "rating": "92",
+    "price": "4.89 ETH"
+  },
+  {
+    "img": "auctions-2.png",
+    "time": "03:18:24",
+    "avatar": "avatar-1.svg",
+    "title": "Virtual Art",
+    "email": "by @wzard",
+    "rating": "92",
+    "price": "4.89 ETH"
+  },
+  {
+    "img": "auctions-3.png",
+    "time": "03:18:24",
+    "avatar": "avatar-1.svg",
+    "title": "Virtual Art",
+    "email": "by @wzard",
+    "rating": "92",
+    "price": "4.89 ETH"
+  }
+]

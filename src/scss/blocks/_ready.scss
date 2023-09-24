@@ -1,0 +1,92 @@
+.ready {
+  background: url('./../img/ready/ready-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  & .container {
+    padding: 117px 300px;
+    text-align: center;
+
+    & .oxanium-64 {
+      color: var(--text-color);
+    }
+
+    & .btn-yellow {
+      width: 244px;
+      height: 96px;
+      flex-shrink: 0;
+
+      & a {
+        font-weight: 700;
+        color: #251928;
+      }
+
+      @include mediaMobile {
+        width: 220px;
+        height: 74px;
+      }
+
+      @include mediaMobileS {
+        width: 187px;
+        height: 54px;
+      }
+    }
+
+    @include mediaLaptop {
+      padding: 50px 50px;
+    }
+
+    @include mediaMobileS {
+      padding: 18px 15px 74px;
+    }
+
+    @include mediaMobileXS {
+      padding: 18px 15px 74px;
+    }
+  }
+}
+
+.ready__title {
+  margin-bottom: 24px;
+
+  & p {
+    @include mediaLaptop {
+      font-size: 54px;
+    }
+
+    @include mediaMobileS {
+      font-size: 36px;
+      line-height: normal;
+    }
+  }
+}
+
+.ready__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & input {
+    padding: 30px 53px;
+    border: 1px solid #e7b226;
+
+    @include mediaMobile {
+      width: 100%;
+      padding: 20px 32px;
+    }
+
+    @include mediaMobileS {
+      font-size: 18px;
+    }
+  }
+
+  & input:placeholder {
+    color: #a48ea9;
+  }
+
+  @include mediaMobile {
+    flex-direction: column;
+    gap: 32px;
+  }
+}

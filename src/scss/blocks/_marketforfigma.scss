@@ -1,0 +1,48 @@
+.maketforfigma {
+  flex: 0 0 auto;
+  background: #313a46;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  & img {
+    border-radius: 10px;
+    margin: 4px 0 0 4px;
+  }
+
+  & p {
+    color: #98a6ad;
+    text-decoration: none;
+    letter-spacing: 0.01875rem;
+    font-size: 0.775rem;
+    padding: 0 10px;
+    line-height: 0.7rem;
+  }
+
+  & p > a {
+    color: #bbe4f0;
+    font-weight: bold;
+  }
+
+  & p > a:hover {
+    color: #ffffff;
+  }
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}

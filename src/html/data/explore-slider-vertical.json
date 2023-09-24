@@ -1,0 +1,26 @@
+[
+  {
+    "img": "explore-1.png",
+    "avatar": "avatar-3.svg",
+    "title": "Virtual Art",
+    "email": "by @wzard",
+    "rating": "92",
+    "price": "4.89 ETH"
+  },
+  {
+    "img": "explore-2.png",
+    "avatar": "avatar-3.svg",
+    "title": "Virtual Art",
+    "email": "by @wzard",
+    "rating": "92",
+    "price": "4.89 ETH"
+  },
+  {
+    "img": "explore-3.png",
+    "avatar": "avatar-3.svg",
+    "title": "Virtual Art",
+    "email": "by @wzard",
+    "rating": "92",
+    "price": "4.89 ETH"
+  }
+]

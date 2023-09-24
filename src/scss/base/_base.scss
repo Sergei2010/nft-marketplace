@@ -1,9 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap');
+
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-	background-color: var(--page-bg);
-	color: var(--text-color);
-    font-family: var(--font-main);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+main {
+  background: var(--page-bg);
+
+  & .container-left {
+    margin-bottom: 194px;
+
+    background: url('./../img/bg/bg-blur.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50% 100%;
+
+    @media (max-width: 1440px) {
+      padding: 0 40px;
+      background-size: 50% 100%;
+    }
+
+    @media (max-width: 1023px) {
+      padding: 0 40px;
+      margin-bottom: 0;
+      background: none;
+    }
+
+    @media (max-width: 475px) {
+      padding: 0 10px;
+    }
+  }
+}
+
+.oxanium-85 {
+  font-family: var(--font-accent);
+  font-size: 85px;
+  font-weight: 700;
+  line-height: 130px;
+}
+
+.oxanium-64 {
+  font-family: var(--font-accent);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 130px;
+}
+
+.oxanium-62 {
+  font-family: var(--font-accent);
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 130px;
+}
+
+.oxanium-32 {
+  font-family: var(--font-accent);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.oxanium-28 {
+  font-family: var(--font-accent);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.96px;
+}
+
+.oxanium-24 {
+  font-family: var(--font-accent);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35.452px;
+}
+
+.oxanium-18 {
+  font-family: var(--font-accent);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 35.452px;
+}
+
+.work-sans-32 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.work-sans-30 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35.452px;
+  letter-spacing: 1.5px;
+}
+
+.work-sans-28 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.work-sans-24 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35.452px;
+}
+
+.work-sans-20 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 35.452px;
+}
+
+.work-sans-18 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.text-2 {
+  font-family: var(--font-accent);
+  font-size: 62px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text-3 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.text-4 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35.452px;
+}
+
+.text-5 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.text-6 {
+  font-family: var(--font-accent);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  text-transform: capitalize;
+}
+
+.btn-yellow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background: var(--primary-color);
+}
+
+.btn-black {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border: 1px solid var(--primary-color);
+  background: var(--grey-bg);
+}
+
+.smooth-transition {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
 }

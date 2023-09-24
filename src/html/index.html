@@ -5,12 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NFT-MARKETPLACE</title>
+    <meta
+      name="description"
+      content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки"
+    />
     <link rel="stylesheet" href="./css/main.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./img/favicon/site.webmanifest" />
+    <link rel="mask-icon" href=".img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
-    <h1>NFT-MARKETPLACE</h1>
-    @@include('blocks/header.html')<br />
-    @@include('blocks/footer.html')<br />
+    <!-- @@include('blocks/marketforfigma/marketforfigma.html') -->
+    <!-- <div class="maketforfigma">
+      <a href="https://t.me/s/FigmaToHTML" target="_blank">
+        <img src="./../img/marketforfigma/logo.png" />
+      </a>
+      <div>
+        <p>
+          Данная верстка, была реализована пользователем в рамках обучающего телеграм канал
+          <a href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
+        </p>
+        <p>
+          При помощи
+          <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a>
+          пользователь получил оплату за верстку этого макета.
+        </p>
+      </div>
+    </div> -->
+    <main>
+      <div class="container-left">
+        @@include('blocks/header.html') @@include('blocks/hero.html')
+      </div>
+      @@include('blocks/clients.html') @@include('blocks/auctions.html')
+      @@include('blocks/how.html') @@include('blocks/popular.html') @@include('blocks/explore.html')
+      @@include('blocks/top-creators.html') @@include('blocks/ready.html')
+    </main>
+    @@include('blocks/footer.html')
     <script src="./js/index.bundle.js"></script>
   </body>
 </html>

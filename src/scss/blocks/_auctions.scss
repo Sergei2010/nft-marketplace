@@ -1,0 +1,135 @@
+.auctions {
+  padding-bottom: 80px;
+  background: url('./../img/auctions/auctions-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include mediaMobileS {
+    padding-bottom: 70px;
+  }
+
+  @include mediaMobileXS {
+    padding-bottom: 58px;
+  }
+
+  & .container {
+    overflow: hidden;
+    padding-top: 80px;
+    background: url('./../img/auctions/auctions-blurr.svg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 50% 23%;
+
+    @include mediaMobile {
+      padding-top: 0;
+    }
+  }
+
+  & .container-slider {
+    @include mediaMobile {
+      margin-bottom: 0;
+    }
+  }
+
+  & .btn-black {
+    margin: 0 auto;
+    width: 257px;
+    height: 84px;
+
+    & a {
+      color: var(--text-color);
+    }
+
+    @include mediaMobile {
+      font-size: 28px;
+    }
+
+    @include mediaMobileS {
+      width: 230px;
+      height: 64px;
+      font-size: 20px;
+    }
+
+    @include mediaMobileXS {
+      width: 187px;
+      height: 54px;
+      font-size: 18px;
+    }
+  }
+}
+
+.auctions__title {
+  padding: 0;
+  color: var(--text-color);
+  text-align: center;
+
+  @include mediaMobile {
+    padding: 54px 0 48px;
+  }
+
+  & p {
+    padding-left: 40px;
+    display: inline-block;
+
+    background-image: url('./../img/auctions/auctions-el.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+
+    @include mediaMobile {
+      padding-left: 34px;
+      font-size: 54px;
+      line-height: 104px;
+    }
+
+    @include mediaMobileS {
+      padding-left: 24px;
+      font-size: 36px;
+      line-height: 84px;
+    }
+  }
+}
+
+.auctions__controls {
+  margin-right: 80px;
+  margin-bottom: 42px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 28px;
+
+  @include mediaMobile {
+    display: none;
+  }
+}
+
+.auctions__slider {
+  width: 1576px;
+
+  @include mediaMobile {
+    display: none;
+  }
+}
+
+.container-slider-mobile {
+  width: 80%;
+  margin: 0 auto;
+  display: none;
+
+  @include mediaMobile {
+    display: block;
+    margin-bottom: 48px;
+  }
+}
+
+.auctions-mobile__items {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}

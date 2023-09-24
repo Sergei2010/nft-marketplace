@@ -1,0 +1,113 @@
+.top-creators {
+  & .container {
+    padding: 104px 156px 80px;
+
+    & .btn-black {
+      margin: 0 auto;
+      width: 257px;
+      height: 84px;
+
+      & a {
+        color: var(--text-color);
+
+        @include mediaMobile {
+          font-size: 24px;
+        }
+
+        @include mediaMobileS {
+          font-size: 18px;
+        }
+      }
+
+      @include mediaMobile {
+        width: 227px;
+        height: 74px;
+      }
+
+      @include mediaMobileS {
+        width: 207px;
+        height: 64px;
+      }
+
+      @include mediaMobileXS {
+        width: 187px;
+        height: 54px;
+      }
+    }
+
+    @include mediaLaptop {
+      padding: 106px 46px;
+    }
+
+    @include mediaTablet {
+      padding: 96px 46px;
+    }
+
+    @include mediaMobile {
+      padding: 96px 36px;
+    }
+
+    @include mediaMobileS {
+      padding: 76px 26px;
+    }
+
+    @include mediaMobileXS {
+      padding: 56px 16px;
+    }
+  }
+}
+
+.top-creators__title {
+  text-align: center;
+  padding-bottom: 80px;
+
+  @include mediaMobile {
+    padding-bottom: 64px;
+    background: url('./../img/ready/ready-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @include mediaMobileS {
+    padding-bottom: 54px;
+  }
+
+  & p {
+    color: var(--text-color);
+    display: inline-block;
+    padding-left: 30px;
+    background: url('./../img/popular/popular-el.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+
+    @include mediaMobile {
+      height: 94px;
+      font-size: 54px;
+      line-height: 94px;
+      background-size: 94px 94px;
+    }
+
+    @include mediaMobileS {
+      padding-left: 38px;
+      font-size: 36px;
+      line-height: 94px;
+      background-size: 84px 84px;
+    }
+  }
+}
+
+.top-creators__items {
+  padding-bottom: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 56px 72px;
+
+  @include mediaTablet {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 24px;
+  }
+}

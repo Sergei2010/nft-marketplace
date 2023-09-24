@@ -1,0 +1,9 @@
+.popular__slider-vertical {
+  width: 100%;
+  display: none;
+
+  @include mediaMobile {
+    display: block;
+    height: 1344px !important;
+  }
+}

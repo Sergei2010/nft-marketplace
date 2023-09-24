@@ -1,0 +1,254 @@
+.card-auctions {
+  width: 495px;
+  height: 691px;
+  padding: 32px 32px 28px;
+  background: #3d2942;
+
+  @include mediaMobile {
+    padding: 32px 10px 28px;
+    width: 100%;
+  }
+
+  @include mediaMobileS {
+    padding: 32px 23px 0;
+  }
+
+  @include mediaMobileXS {
+    padding: 32px 23px 0;
+  }
+
+  @include mediaMobileM {
+    padding: 32px 23px 24px;
+    height: min-content;
+  }
+}
+
+.card-auctions__img {
+  width: 431px;
+  height: 359px;
+  margin-bottom: 28px;
+  position: relative;
+
+  @include mediaMobile {
+    width: 100%;
+    height: 57%;
+    overflow: hidden;
+  }
+
+  @include mediaMobileS {
+    width: 100%;
+    height: 58%;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+
+  @include mediaMobileXS {
+    width: 295px;
+    height: 318px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+
+  & img {
+    @include mediaMobile {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.card-auctions__time {
+  width: 194px;
+  height: 66px;
+
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--text-color);
+  background: url('./../img/auctions/auctions-rec.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+
+  @include mediaMobile {
+    width: 194px;
+    height: 66px;
+    font-size: 20px;
+  }
+
+  @include mediaMobileS {
+    width: 178px;
+    height: 60px;
+    font-size: 18px;
+  }
+
+  @include mediaMobileXS {
+    width: 158px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+
+.card-auctions__about {
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mediaMobileS {
+    margin-bottom: 23px;
+    font-size: 24px;
+  }
+
+  @include mediaMobileXS {
+    margin-bottom: 23px;
+    font-size: 18px;
+  }
+}
+
+.card-auctions__author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  @include mediaMobileS {
+    gap: 10px;
+  }
+}
+
+.card-auctions__desc {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @include mediaMobile {
+    gap: 6px;
+  }
+
+  @include mediaMobileS {
+    gap: 4px;
+  }
+
+  @include mediaMobileXS {
+    gap: 0;
+  }
+
+  & p:nth-child(1) {
+    color: var(--text-color);
+
+    @include mediaMobileS {
+      font-size: 24px;
+    }
+
+    @include mediaMobileS {
+      font-size: 20px;
+    }
+
+    @include mediaMobileXS {
+      font-size: 18px;
+    }
+  }
+
+  & p:nth-child(2) {
+    color: #bdaac1;
+
+    @include mediaMobileS {
+      font-size: 14px;
+    }
+  }
+}
+
+.card-auctions__rating {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  @include mediaMobileS {
+    gap: 8px;
+  }
+
+  & p:nth-child(2) {
+    color: #76607a;
+
+    @include mediaMobile {
+      font-size: 30px;
+    }
+
+    @include mediaMobileS {
+      font-size: 28px;
+    }
+
+    @include mediaMobileXS {
+      font-size: 24px;
+    }
+  }
+}
+
+.card-auctions__price {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & p:nth-child(1) {
+    color: #c6bfc8;
+
+    @include mediaMobileS {
+      font-size: 20px;
+    }
+  }
+
+  & p:nth-child(2) {
+    color: var(--text-color);
+  }
+
+  @include mediaMobile {
+    margin-bottom: 20px;
+  }
+
+  @include mediaMobileS {
+    margin-bottom: 20px;
+  }
+
+  @include mediaMobileXS {
+    margin-bottom: 14px;
+  }
+}
+
+.card-auctions__btn {
+  border-color: #fde8b3;
+  width: 100%;
+
+  & .btn-black {
+    width: unset;
+    border-color: unset;
+  }
+
+  & .work-sans-24 {
+    color: var(--text-white);
+
+    @include mediaMobile {
+      font-size: 20px;
+    }
+
+    @include mediaMobile {
+      font-size: 20px;
+    }
+
+    @include mediaMobile {
+      font-size: 20px;
+    }
+  }
+
+  @include mediaMobile {
+    margin: 0 auto;
+    width: 271px;
+    height: 54px;
+  }
+}

@@ -1,0 +1,7 @@
+.popular__slider-horizontal {
+  width: 1647px;
+
+  @include mediaMobile {
+    display: none;
+  }
+}

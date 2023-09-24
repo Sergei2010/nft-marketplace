@@ -1,0 +1,152 @@
+.explore {
+  & .container {
+    padding: 80px 0;
+    background: #251928;
+    overflow: hidden;
+
+    & .btn-black {
+      width: 257px;
+      height: 84px;
+      margin: 0 auto;
+
+      & a {
+        color: var(--text-color);
+
+        @include mediaMobileS {
+          font-size: 24px;
+        }
+
+        @include mediaMobileXS {
+          font-size: 18px;
+        }
+      }
+
+      @include mediaMobileS {
+        width: 187px;
+        height: 54px;
+      }
+    }
+
+    @include mediaMobile {
+      padding: 60px 16px;
+    }
+  }
+
+  & .container-slider {
+    //overflow: hidden;
+    padding-bottom: 84px;
+
+    @include mediaMobile {
+      padding-bottom: 48px;
+      padding-left: 0;
+    }
+  }
+}
+
+.explore__title {
+  margin-bottom: 84px;
+  text-align: center;
+
+  & p {
+    color: var(--text-color);
+    padding-left: 24px;
+    display: inline-block;
+    background-image: url('./../img/auctions/auctions-el.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 104px 104px;
+
+    @include mediaMobile {
+      font-size: 54px;
+    }
+
+    @include mediaMobileS {
+      padding-top: 35px;
+      font-size: 36px;
+      line-height: normal;
+      background-size: 84px 84px;
+      background-position: 107px 0px;
+    }
+
+    @include mediaMobileXS {
+      background-position: 85px 0px;
+    }
+
+    @include mediaMobileM {
+      background-position: 60px 0px;
+    }
+  }
+
+  @include mediaMobile {
+    margin-bottom: 54px;
+  }
+}
+
+.explore__slider {
+  width: 1786px;
+  position: relative;
+
+  @include mediaMobile {
+    width: 100%;
+  }
+}
+
+.explore__controls {
+  position: absolute;
+  top: 169px;
+  left: 88px;
+  z-index: 10;
+
+  @include mediaMobile {
+    top: 250px;
+    left: 236px;
+  }
+
+  @include mediaMobileS {
+    top: 150px;
+    left: 110px;
+  }
+
+  @include mediaMobileXS {
+    top: 150px;
+    left: 70px;
+  }
+
+  @include mediaMobileM {
+    top: 150px;
+    left: 60px;
+  }
+
+  & .btn-yellow {
+    width: 246px;
+    height: 70px;
+
+    @include mediaMobileS {
+      width: 187px;
+      height: 54px;
+    }
+  }
+
+  & p {
+    font-weight: 700;
+    color: var(--text-black);
+
+    @include mediaMobileS {
+      font-size: 20px;
+    }
+  }
+}
+
+.explore__horizontal {
+  display: block;
+  @include mediaMobile {
+    display: none;
+  }
+}
+
+.explore__vertical {
+  display: none;
+  @include mediaMobile {
+    display: block;
+  }
+}

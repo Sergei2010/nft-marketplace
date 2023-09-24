@@ -1,0 +1,23 @@
+.btn-connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 22px 30px;
+  //height: 64px;
+  border: 1px solid #ffce4e;
+  background: rgba(233, 215, 167, 0.1);
+
+  color: var(--primary-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  transition: background-color 0.2s ease-in, color 0.2s ease-in, opacity 0.2s ease-in;
+}
+
+.btn-connect:hover,
+.btn-connect:focus {
+  opacity: 0.75;
+}

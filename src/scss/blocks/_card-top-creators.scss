@@ -1,0 +1,143 @@
+.card-top-creators {
+  background: #302034;
+  box-shadow: 2px 0px 0px 0px #e03054 inset;
+  padding: 26px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mediaMobileS {
+    padding: 0 10px;
+  }
+
+  @include mediaMobileXS {
+    padding: 0 10px;
+  }
+}
+.card-top-creators__left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  @include mediaMobileS {
+    gap: 18px;
+  }
+
+  @include mediaMobileXS {
+    gap: 12px;
+  }
+}
+
+.card-top-creators__avatar {
+  width: 104px;
+  height: 104px;
+
+  @include mediaMobile {
+    width: 88px;
+    height: 88px;
+  }
+
+  @include mediaMobileS {
+    width: 68px;
+    height: 68px;
+  }
+
+  @include mediaMobileXS {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.card-top-creators__desc {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @include mediaMobileS {
+    gap: 0;
+  }
+
+  & p:nth-child(1) {
+    color: var(--text-color);
+
+    @include mediaLaptop {
+      font-size: 24px;
+    }
+
+    @include mediaMobile {
+      font-size: 24px;
+    }
+
+    @include mediaMobileS {
+      font-family: var(--font-main);
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+
+  & p:nth-child(2) {
+    color: #bdaac1;
+
+    @include mediaMobile {
+      font-size: 18px;
+    }
+
+    @include mediaMobileS {
+      font-size: 14px;
+    }
+  }
+}
+
+.card-top-creators__right {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+
+  @include mediaMobileS {
+    gap: 30px;
+  }
+
+  & p:nth-child(1) {
+    color: var(--text-color);
+
+    @include mediaMobileS {
+      font-size: 24px;
+    }
+  }
+
+  & p:nth-child(2) {
+    color: #bdaac1;
+
+    @include mediaMobile {
+      font-size: 18px;
+    }
+
+    @include mediaMobileS {
+      font-size: 16px;
+    }
+  }
+}
+
+.card-top-creators__line {
+  padding: 10px 0;
+
+  @include mediaMobileS {
+    & img {
+      object-fit: cover;
+      height: 80px;
+    }
+  }
+}
+
+.card-top-creators__achievements {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+
+  @include mediaMobile {
+    gap: 6px;
+  }
+}
